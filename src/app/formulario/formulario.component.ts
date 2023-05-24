@@ -3,8 +3,6 @@ import { IngresoServicio } from '../ingreso/ingreso.servicio';
 import { EgresoServicio } from '../egreso/egreso.servicio';
 import { Ingreso } from '../ingreso/ingreso.model';
 import { Egreso } from '../egreso/egreso.model';
-import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-formulario',

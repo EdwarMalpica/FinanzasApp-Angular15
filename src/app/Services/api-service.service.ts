@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ApiServiceService {
-  api = 'http://mongoproject.alwaysdata.net/';
+  api = 'http://127.0.0.1:5000/';
 
   constructor(private http: HttpClient) {}
 
