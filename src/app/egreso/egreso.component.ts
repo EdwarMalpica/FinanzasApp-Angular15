@@ -21,6 +21,10 @@ export class EgresoComponent {
     this.egresoServicio.eliminar(egreso);
   }
 
+  editarRegistro(egreso:Egreso){
+    this.egresoServicio.editar(egreso);
+    this.egresoServicio.eliminar(egreso);
+  }
   calcularPorcentaje(egreso: Egreso){
     return egreso.valor/this.ingresoTotal;
   }

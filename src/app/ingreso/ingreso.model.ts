@@ -1,3 +1,3 @@
 export class Ingreso{
-    constructor(public descripcion:String, public valor:number){}
+    constructor(public id:string,public descripcion:string, public valor:number){}
 }

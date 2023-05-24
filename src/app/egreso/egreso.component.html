@@ -7,7 +7,9 @@
               <div class="elemento_porcentaje">{{calcularPorcentaje(egreso) | percent}}</div>
               <div class="elemento_eliminar">
                   <button class="elemento_eliminar--btn">
-                      <i class="ion-ios-close-outline" (click)="eliminarRegistro(egreso)"></i></button>
+                      <i class="ion-ios-close-outline" (click)="eliminarRegistro(egreso)"> </i></button>
+                  <button class="elemento_eliminar--btn">
+                  <i class="ion-edit" (click)="editarRegistro(egreso)"></i></button>
               </div>
           </div>
       </div>

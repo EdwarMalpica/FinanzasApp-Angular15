@@ -10,21 +10,18 @@ import { IngresoComponent } from './ingreso/ingreso.component';
 import { IngresoServicio } from './ingreso/ingreso.servicio';
 import { EgresoServicio } from './egreso/egreso.servicio';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ApiServiceService } from './Services/api-service.service';
 @NgModule({
   declarations: [
     AppComponent,
     CabeceroComponent,
     EgresoComponent,
     FormularioComponent,
-    IngresoComponent
+    IngresoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [IngresoServicio,EgresoServicio],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  providers: [IngresoServicio, EgresoServicio, ApiServiceService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

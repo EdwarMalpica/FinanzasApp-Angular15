@@ -2,9 +2,12 @@
   <div class="agregar">
       <div class="agregar_contenedor">
           <select
+              name="s"
+              title="a"
               (change)="tipoOperacion($event)"
               class="agregar_tipo"
               [ngClass]="{redfocus: tipo === 'egresoOperacion'}"
+              [(ngModel)] ="valorSelect"
               >
               <option value="ingresoOperacion" selected>+</option>
               <option value="egresoOperacion">-</option>
