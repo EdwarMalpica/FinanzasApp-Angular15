@@ -31,6 +31,15 @@ export class FormularioComponent implements OnInit {
         this.edit = true;
       }
     });
+    this.ingresoServicio.getIngreso().subscribe((igr) => {
+      if (igr != null) {
+        this.descripcionInput = igr.descripcion;
+        this.valorInput = igr.valor;
+        this.valorSelect = 'ingresoOperacion';
+        this.tipo = 'ingresoOperacion';
+        this.edit = true;
+      }
+    });
   }
 
   tipoOperacion(evento) {

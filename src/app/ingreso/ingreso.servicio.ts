@@ -35,11 +35,12 @@ export class IngresoServicio {
     const indice: number = this.ingresos.indexOf(ingreso);
     this.ingresos.splice(indice, 1);
     this._api.delete(ingreso.id);
+     return indice;
   }
   editar(ingreso: Ingreso) {
     this.ingreso.next(ingreso);
   }
-  getEgreso() {
+  getIngreso() {
     return this.ingreso.asObservable();
   }
 
